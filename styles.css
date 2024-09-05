@@ -1,0 +1,53 @@
+/* Styling the horizontal nav bar */
+    ul.topnav {
+        list-style-type: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    ul.topnav li {float: right;}
+
+    ul.topnav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+    ul.topnav li a.active {background-color: #04AA6D;}
+
+    ul.topnav li.right {float: right;}
+    
+    li {
+        float: right;
+    }
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+  
+/* Change the link color to #111 (black) on hover */
+    li a:hover {
+        background-color: #111;
+    }
+
+/* Change the background color on active page */
+    .active {
+        background-color: #aa0404;
+    }
+
+/* Responsive CSS for Tablet and Phone */
+    @media screen and (max-width: 600px) {
+        ul.topnav li.right, 
+        ul.topnav li {float: none;}
+    }
